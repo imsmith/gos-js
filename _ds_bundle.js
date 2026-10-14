@@ -1,4 +1,4 @@
-/* @ds-bundle: {"format":3,"namespace":"DesignSystem_019de4","components":[{"name":"Button","sourcePath":"components/core/Button.jsx"},{"name":"Card","sourcePath":"components/core/Card.jsx"},{"name":"Mark","sourcePath":"components/core/Mark.jsx"},{"name":"StatusBadge","sourcePath":"components/core/StatusBadge.jsx"},{"name":"Tag","sourcePath":"components/core/Tag.jsx"},{"name":"DivergingMeter","sourcePath":"components/data/DivergingMeter.jsx"},{"name":"Heatmap","sourcePath":"components/data/Heatmap.jsx"},{"name":"SequentialMeter","sourcePath":"components/data/SequentialMeter.jsx"},{"name":"Sparkline","sourcePath":"components/data/Sparkline.jsx"},{"name":"Alert","sourcePath":"components/feedback/Alert.jsx"},{"name":"Checkbox","sourcePath":"components/forms/Checkbox.jsx"},{"name":"Input","sourcePath":"components/forms/Input.jsx"},{"name":"Select","sourcePath":"components/forms/Select.jsx"},{"name":"Toggle","sourcePath":"components/forms/Toggle.jsx"},{"name":"Tabs","sourcePath":"components/navigation/Tabs.jsx"},{"name":"Table","sourcePath":"components/core/Table.jsx","exports":["Table"]},{"name":"Tooltip","sourcePath":"components/core/Tooltip.jsx","exports":["Tooltip"]},{"name":"Modal","sourcePath":"components/feedback/Modal.jsx","exports":["Modal"]},{"name":"StatePanel","sourcePath":"components/feedback/StatePanel.jsx","exports":["StatePanel","Skeleton"]},{"name":"Toast","sourcePath":"components/feedback/Toast.jsx","exports":["Toast","ToastStack"]},{"name":"Radio","sourcePath":"components/forms/Radio.jsx","exports":["Radio"]},{"name":"Breadcrumb","sourcePath":"components/navigation/Breadcrumb.jsx","exports":["Breadcrumb"]},{"name":"Menu","sourcePath":"components/navigation/Menu.jsx","exports":["Menu"]},{"name":"Pagination","sourcePath":"components/navigation/Pagination.jsx","exports":["Pagination"]},{"name":"Freshness","sourcePath":"components/data/Freshness.jsx","exports":["Freshness"]},{"name":"KeyValue","sourcePath":"components/data/KeyValue.jsx","exports":["KeyValue"]},{"name":"LogView","sourcePath":"components/data/LogView.jsx","exports":["LogView"]},{"name":"StatTile","sourcePath":"components/data/StatTile.jsx","exports":["StatTile"]},{"name":"AppShell","sourcePath":"components/layout/AppShell.jsx","exports":["AppShell"]}],"sourceHashes":{"assets/marks/sprite-inject.js":"5a5d74914289","components/core/Button.jsx":"d2a980d93dc0","components/core/Card.jsx":"832042dd214f","components/core/Mark.jsx":"ae112ec59efc","components/core/StatusBadge.jsx":"facd22220d4f","components/core/Tag.jsx":"12d61187c337","components/data/DivergingMeter.jsx":"44ee6f131060","components/data/Heatmap.jsx":"ac4ad10964ea","components/data/SequentialMeter.jsx":"a81dc6f85249","components/data/Sparkline.jsx":"69181e5ed918","components/feedback/Alert.jsx":"1b2946adb71c","components/forms/Checkbox.jsx":"03b863d69b1a","components/forms/Input.jsx":"1d17bd92be58","components/forms/Select.jsx":"dd37240a0cea","components/forms/Toggle.jsx":"8bd900ae4450","components/navigation/Tabs.jsx":"b03e369b6916","ui_kits/operations-console/AlertsView.jsx":"82da2d585bac","ui_kits/operations-console/App.jsx":"7d56c2e6f3ff","ui_kits/operations-console/GridDashboard.jsx":"a89c30b281fc","ui_kits/operations-console/LoginScreen.jsx":"c2729dc4a06f","ui_kits/operations-console/NodeDetail.jsx":"4f3574647a49","ui_kits/operations-console/Shell.jsx":"c6fdc9491548","ui_kits/operations-console/data.js":"fb919dbc6d92","components/core/Table.jsx":"f6375b822393","components/core/Tooltip.jsx":"4c41350343e5","components/feedback/Modal.jsx":"54651315685b","components/feedback/StatePanel.jsx":"78bb09c65393","components/feedback/Toast.jsx":"3b676e3d62e6","components/forms/Radio.jsx":"a2def396419c","components/navigation/Breadcrumb.jsx":"4a481889a1df","components/navigation/Menu.jsx":"f9059627e548","components/navigation/Pagination.jsx":"bad8d39e4d6c","components/data/Freshness.jsx":"bc60a9ee6152","components/data/KeyValue.jsx":"3f99212d4366","components/data/LogView.jsx":"b3b025949335","components/data/StatTile.jsx":"03100568fbb3","components/layout/AppShell.jsx":"6bb80e2522c2"},"inlinedExternals":[],"unexposedExports":[]} */
+/* @ds-bundle: {"format":3,"namespace":"DesignSystem_019de4","components":[{"name":"Button","sourcePath":"components/core/Button.jsx"},{"name":"Card","sourcePath":"components/core/Card.jsx"},{"name":"Mark","sourcePath":"components/core/Mark.jsx"},{"name":"StatusBadge","sourcePath":"components/core/StatusBadge.jsx"},{"name":"Tag","sourcePath":"components/core/Tag.jsx"},{"name":"DivergingMeter","sourcePath":"components/data/DivergingMeter.jsx"},{"name":"Heatmap","sourcePath":"components/data/Heatmap.jsx"},{"name":"SequentialMeter","sourcePath":"components/data/SequentialMeter.jsx"},{"name":"Sparkline","sourcePath":"components/data/Sparkline.jsx"},{"name":"Alert","sourcePath":"components/feedback/Alert.jsx"},{"name":"Checkbox","sourcePath":"components/forms/Checkbox.jsx"},{"name":"Input","sourcePath":"components/forms/Input.jsx"},{"name":"Select","sourcePath":"components/forms/Select.jsx"},{"name":"Toggle","sourcePath":"components/forms/Toggle.jsx"},{"name":"Tabs","sourcePath":"components/navigation/Tabs.jsx"},{"name":"Table","sourcePath":"components/core/Table.jsx","exports":["Table"]},{"name":"Tooltip","sourcePath":"components/core/Tooltip.jsx","exports":["Tooltip"]},{"name":"Modal","sourcePath":"components/feedback/Modal.jsx","exports":["Modal"]},{"name":"StatePanel","sourcePath":"components/feedback/StatePanel.jsx","exports":["StatePanel","Skeleton"]},{"name":"Toast","sourcePath":"components/feedback/Toast.jsx","exports":["Toast","ToastStack"]},{"name":"Radio","sourcePath":"components/forms/Radio.jsx","exports":["Radio"]},{"name":"Breadcrumb","sourcePath":"components/navigation/Breadcrumb.jsx","exports":["Breadcrumb"]},{"name":"Menu","sourcePath":"components/navigation/Menu.jsx","exports":["Menu"]},{"name":"Pagination","sourcePath":"components/navigation/Pagination.jsx","exports":["Pagination"]},{"name":"Freshness","sourcePath":"components/data/Freshness.jsx","exports":["Freshness"]},{"name":"KeyValue","sourcePath":"components/data/KeyValue.jsx","exports":["KeyValue"]},{"name":"LogView","sourcePath":"components/data/LogView.jsx","exports":["LogView"]},{"name":"StatTile","sourcePath":"components/data/StatTile.jsx","exports":["StatTile"]},{"name":"AppShell","sourcePath":"components/layout/AppShell.jsx","exports":["AppShell"]},{"name":"Kbd","sourcePath":"components/core/Kbd.jsx","exports":["Kbd"]},{"name":"SkipLink","sourcePath":"components/core/SkipLink.jsx","exports":["SkipLink"]},{"name":"Timeline","sourcePath":"components/data/Timeline.jsx","exports":["Timeline"]},{"name":"Drawer","sourcePath":"components/feedback/Drawer.jsx","exports":["Drawer"]},{"name":"Fieldset","sourcePath":"components/forms/Fieldset.jsx","exports":["Fieldset"]},{"name":"Textarea","sourcePath":"components/forms/Textarea.jsx","exports":["Textarea"]},{"name":"Stepper","sourcePath":"components/navigation/Stepper.jsx","exports":["Stepper"]}],"sourceHashes":{"assets/marks/sprite-inject.js":"5a5d74914289","components/core/Button.jsx":"d2a980d93dc0","components/core/Card.jsx":"832042dd214f","components/core/Mark.jsx":"ae112ec59efc","components/core/StatusBadge.jsx":"facd22220d4f","components/core/Tag.jsx":"12d61187c337","components/data/DivergingMeter.jsx":"44ee6f131060","components/data/Heatmap.jsx":"ac4ad10964ea","components/data/SequentialMeter.jsx":"a81dc6f85249","components/data/Sparkline.jsx":"69181e5ed918","components/feedback/Alert.jsx":"1b2946adb71c","components/forms/Checkbox.jsx":"03b863d69b1a","components/forms/Input.jsx":"1d17bd92be58","components/forms/Select.jsx":"dd37240a0cea","components/forms/Toggle.jsx":"8bd900ae4450","components/navigation/Tabs.jsx":"b03e369b6916","ui_kits/operations-console/AlertsView.jsx":"82da2d585bac","ui_kits/operations-console/App.jsx":"7d56c2e6f3ff","ui_kits/operations-console/GridDashboard.jsx":"a89c30b281fc","ui_kits/operations-console/LoginScreen.jsx":"c2729dc4a06f","ui_kits/operations-console/NodeDetail.jsx":"4f3574647a49","ui_kits/operations-console/Shell.jsx":"c6fdc9491548","ui_kits/operations-console/data.js":"fb919dbc6d92","components/core/Table.jsx":"f6375b822393","components/core/Tooltip.jsx":"4c41350343e5","components/feedback/Modal.jsx":"54651315685b","components/feedback/StatePanel.jsx":"78bb09c65393","components/feedback/Toast.jsx":"3b676e3d62e6","components/forms/Radio.jsx":"a2def396419c","components/navigation/Breadcrumb.jsx":"4a481889a1df","components/navigation/Menu.jsx":"f9059627e548","components/navigation/Pagination.jsx":"bad8d39e4d6c","components/data/Freshness.jsx":"bc60a9ee6152","components/data/KeyValue.jsx":"3f99212d4366","components/data/LogView.jsx":"b3b025949335","components/data/StatTile.jsx":"03100568fbb3","components/layout/AppShell.jsx":"f068b6dced4a","components/core/Kbd.jsx":"f0d0c255a872","components/core/SkipLink.jsx":"4f8c501936cf","components/data/Timeline.jsx":"4e1ef320cc63","components/feedback/Drawer.jsx":"c12c2cc2cdc3","components/forms/Fieldset.jsx":"6179beaa0803","components/forms/Textarea.jsx":"6bfb28e749d7","components/navigation/Stepper.jsx":"d08c6ee99dd9"},"inlinedExternals":[],"unexposedExports":[]} */
 
 (() => {
 
@@ -973,10 +973,115 @@ Object.assign(__ds_scope, { StatTile });
 // components/layout/AppShell.jsx
 try { (() => {
 function AppShell({ brand, summary, meta, actions, nav, navWidth, children, className = "", ...rest }) {
-  return /* @__PURE__ */ React.createElement("div", { className: ["ds-shell", nav ? "" : "ds-shell--no-nav", className].filter(Boolean).join(" "), style: navWidth ? { "--_nav": navWidth } : void 0, ...rest }, /* @__PURE__ */ React.createElement("header", { className: "ds-shell__head" }, brand && /* @__PURE__ */ React.createElement("div", { className: "ds-shell__brand" }, brand), summary && /* @__PURE__ */ React.createElement("div", { className: "ds-shell__summary" }, summary), /* @__PURE__ */ React.createElement("div", { className: "ds-shell__meta" }, meta, actions && /* @__PURE__ */ React.createElement("div", { className: "ds-shell__actions" }, actions))), nav && /* @__PURE__ */ React.createElement("nav", { className: "ds-shell__nav" }, nav), /* @__PURE__ */ React.createElement("main", { className: "ds-shell__main" }, children));
+  return /* @__PURE__ */ React.createElement("div", { className: ["ds-shell", nav ? "" : "ds-shell--no-nav", className].filter(Boolean).join(" "), style: navWidth ? { "--_nav": navWidth } : void 0, ...rest }, /* @__PURE__ */ React.createElement("header", { className: "ds-shell__head" }, brand && /* @__PURE__ */ React.createElement("div", { className: "ds-shell__brand" }, brand), summary && /* @__PURE__ */ React.createElement("div", { className: "ds-shell__summary" }, summary), /* @__PURE__ */ React.createElement("div", { className: "ds-shell__meta" }, meta, actions && /* @__PURE__ */ React.createElement("div", { className: "ds-shell__actions" }, actions))), nav && /* @__PURE__ */ React.createElement("nav", { className: "ds-shell__nav" }, nav), /* @__PURE__ */ React.createElement("main", { id: "main", className: "ds-shell__main" }, children));
 }
 Object.assign(__ds_scope, { AppShell });
 })(); } catch (e) { __ds_ns.__errors.push({ path: "components/layout/AppShell.jsx", error: String((e && e.message) || e) }); }
+// components/core/Kbd.jsx
+try { (() => {
+function Kbd({ keys, className = "", ...rest }) {
+  const list = Array.isArray(keys) ? keys : [keys];
+  return /* @__PURE__ */ React.createElement("span", { className: `ds-kbd ${className}`.trim(), ...rest }, list.map((k, i) => /* @__PURE__ */ React.createElement(React.Fragment, { key: i }, i > 0 && /* @__PURE__ */ React.createElement("span", { className: "ds-kbd__plus", "aria-hidden": "true" }, "+"), /* @__PURE__ */ React.createElement("kbd", null, k))));
+}
+Object.assign(__ds_scope, { Kbd });
+})(); } catch (e) { __ds_ns.__errors.push({ path: "components/core/Kbd.jsx", error: String((e && e.message) || e) }); }
+// components/core/SkipLink.jsx
+try { (() => {
+function SkipLink({ href = "#main", children = "Skip to content", className = "", ...rest }) {
+  return /* @__PURE__ */ React.createElement("a", { href, className: `ds-skip ${className}`.trim(), ...rest }, children);
+}
+Object.assign(__ds_scope, { SkipLink });
+})(); } catch (e) { __ds_ns.__errors.push({ path: "components/core/SkipLink.jsx", error: String((e && e.message) || e) }); }
+// components/data/Timeline.jsx
+try { (() => {
+const { Mark } = __ds_scope;
+const SEV = {
+  critical: { c: "var(--status-critical)", on: "var(--on-status-critical)", glyph: "m-critical" },
+  high: { c: "var(--status-high)", on: "var(--on-status-high)", glyph: "m-high" },
+  medium: { c: "var(--status-medium)", on: "var(--on-status-medium)", glyph: "m-medium" },
+  low: { c: "var(--status-low)", on: "var(--on-status-low)", glyph: "m-low" },
+  unknown: { c: "var(--status-unknown)", on: "var(--on-status-unknown)", glyph: "m-unknown" }
+};
+function Timeline({ events = [], className = "", ...rest }) {
+  return /* @__PURE__ */ React.createElement("ol", { className: `ds-timeline ${className}`.trim(), ...rest }, events.map((e, i) => {
+    const s = SEV[e.severity];
+    return /* @__PURE__ */ React.createElement("li", { key: e.id || i, className: "ds-event" }, /* @__PURE__ */ React.createElement("span", { className: "ds-event__dot", style: s ? { "--_c": s.c, "--_on": s.on } : void 0, "aria-hidden": "true" }, s && /* @__PURE__ */ React.createElement(Mark, { name: s.glyph, size: 10 })), /* @__PURE__ */ React.createElement("div", { className: "ds-event__time" }, e.time, e.severity && /* @__PURE__ */ React.createElement("span", null, " \xB7 ", e.severity.toUpperCase())), /* @__PURE__ */ React.createElement("div", { className: "ds-event__title" }, e.title), e.body && /* @__PURE__ */ React.createElement("div", { className: "ds-event__body" }, e.body));
+  }));
+}
+Object.assign(__ds_scope, { Timeline });
+})(); } catch (e) { __ds_ns.__errors.push({ path: "components/data/Timeline.jsx", error: String((e && e.message) || e) }); }
+// components/feedback/Drawer.jsx
+try { (() => {
+const { Mark } = __ds_scope;
+function Drawer({ open, onClose, title, side = "right", width, blocking = false, children, footer, className = "", ...rest }) {
+  const ref = React.useRef(null);
+  const id = React.useId();
+  React.useEffect(() => {
+    if (!open) return;
+    const prev = document.activeElement;
+    const el = ref.current;
+    const focusables = () => el.querySelectorAll('a[href],button:not([disabled]),input:not([disabled]),select:not([disabled]),textarea:not([disabled]),[tabindex]:not([tabindex="-1"])');
+    (focusables()[0] || el).focus();
+    const onKey = (e) => {
+      if (e.key === "Escape" && !blocking) {
+        e.preventDefault();
+        onClose && onClose();
+      }
+      if (e.key === "Tab") {
+        const f = focusables();
+        if (!f.length) return;
+        const a = f[0], z = f[f.length - 1];
+        if (e.shiftKey && document.activeElement === a) {
+          e.preventDefault();
+          z.focus();
+        } else if (!e.shiftKey && document.activeElement === z) {
+          e.preventDefault();
+          a.focus();
+        }
+      }
+    };
+    document.addEventListener("keydown", onKey);
+    return () => {
+      document.removeEventListener("keydown", onKey);
+      prev && prev.focus && prev.focus();
+    };
+  }, [open, blocking, onClose]);
+  if (!open) return null;
+  return /* @__PURE__ */ React.createElement("div", { className: `ds-scrim ds-scrim--drawer${side === "left" ? " ds-scrim--left" : ""}`, onMouseDown: (e) => {
+    if (!blocking && e.target === e.currentTarget) onClose && onClose();
+  } }, /* @__PURE__ */ React.createElement("div", { ref, className: `ds-drawer ${className}`.trim(), style: width ? { "--_w": width } : void 0, role: "dialog", "aria-modal": "true", "aria-labelledby": `${id}-title`, tabIndex: -1, ...rest }, /* @__PURE__ */ React.createElement("div", { className: "ds-drawer__head" }, /* @__PURE__ */ React.createElement("h2", { className: "ds-drawer__title", id: `${id}-title` }, title), !blocking && /* @__PURE__ */ React.createElement("button", { type: "button", className: "ds-modal__x", "aria-label": "Close", onClick: onClose }, /* @__PURE__ */ React.createElement(Mark, { name: "m-close", size: 16 }))), /* @__PURE__ */ React.createElement("div", { className: "ds-drawer__body" }, children), footer && /* @__PURE__ */ React.createElement("div", { className: "ds-drawer__foot" }, footer)));
+}
+Object.assign(__ds_scope, { Drawer });
+})(); } catch (e) { __ds_ns.__errors.push({ path: "components/feedback/Drawer.jsx", error: String((e && e.message) || e) }); }
+// components/forms/Fieldset.jsx
+try { (() => {
+function Fieldset({ legend, hint, children, className = "", ...rest }) {
+  return /* @__PURE__ */ React.createElement("fieldset", { className: `ds-fieldset ${className}`.trim(), ...rest }, legend && /* @__PURE__ */ React.createElement("legend", { className: "ds-fieldset__legend" }, legend), hint && /* @__PURE__ */ React.createElement("p", { className: "ds-fieldset__hint" }, hint), children);
+}
+Object.assign(__ds_scope, { Fieldset });
+})(); } catch (e) { __ds_ns.__errors.push({ path: "components/forms/Fieldset.jsx", error: String((e && e.message) || e) }); }
+// components/forms/Textarea.jsx
+try { (() => {
+const { Mark } = __ds_scope;
+function Textarea({ label, error, helper, id, rows = 4, className = "", ...rest }) {
+  const fid = id || (label ? `ds-${String(label).replace(/\s+/g, "-").toLowerCase()}` : void 0);
+  const msg = error || helper;
+  return /* @__PURE__ */ React.createElement("div", { className: `ds-field${error ? " ds-field--error" : ""} ${className}`.trim() }, label && /* @__PURE__ */ React.createElement("label", { className: "ds-field__label", htmlFor: fid }, label), /* @__PURE__ */ React.createElement("div", { className: "ds-field__wrap" }, /* @__PURE__ */ React.createElement("textarea", { id: fid, rows, className: "ds-input ds-textarea", "aria-invalid": error ? "true" : void 0, ...rest })), msg && /* @__PURE__ */ React.createElement("div", { className: "ds-field__msg" }, error && /* @__PURE__ */ React.createElement(Mark, { name: "m-critical", size: 12, label: "Error" }), /* @__PURE__ */ React.createElement("span", null, msg)));
+}
+Object.assign(__ds_scope, { Textarea });
+})(); } catch (e) { __ds_ns.__errors.push({ path: "components/forms/Textarea.jsx", error: String((e && e.message) || e) }); }
+// components/navigation/Stepper.jsx
+try { (() => {
+const { Mark } = __ds_scope;
+function Stepper({ steps = [], current, className = "", ...rest }) {
+  const ci = steps.findIndex((s) => s.id === current);
+  return /* @__PURE__ */ React.createElement("ol", { className: `ds-stepper ${className}`.trim(), ...rest }, steps.map((s, i) => {
+    const state = s.state || (ci < 0 ? "upcoming" : i < ci ? "done" : i === ci ? "current" : "upcoming");
+    return /* @__PURE__ */ React.createElement(React.Fragment, { key: s.id || i }, i > 0 && /* @__PURE__ */ React.createElement("li", { className: "ds-step__connector", role: "presentation" }), /* @__PURE__ */ React.createElement("li", { className: `ds-step ds-step--${state}`, "aria-current": state === "current" ? "step" : void 0 }, /* @__PURE__ */ React.createElement("span", { className: "ds-step__disc", "aria-hidden": "true" }, state === "done" ? /* @__PURE__ */ React.createElement(Mark, { name: "m-low", size: 14 }) : state === "blocked" ? /* @__PURE__ */ React.createElement(Mark, { name: "m-critical", size: 14 }) : i + 1), /* @__PURE__ */ React.createElement("span", null, s.label)));
+  }));
+}
+Object.assign(__ds_scope, { Stepper });
+})(); } catch (e) { __ds_ns.__errors.push({ path: "components/navigation/Stepper.jsx", error: String((e && e.message) || e) }); }
 __ds_ns.Button = __ds_scope.Button;
 
 __ds_ns.Card = __ds_scope.Card;
@@ -1038,5 +1143,19 @@ __ds_ns.LogView = __ds_scope.LogView;
 __ds_ns.StatTile = __ds_scope.StatTile;
 
 __ds_ns.AppShell = __ds_scope.AppShell;
+
+__ds_ns.Kbd = __ds_scope.Kbd;
+
+__ds_ns.SkipLink = __ds_scope.SkipLink;
+
+__ds_ns.Timeline = __ds_scope.Timeline;
+
+__ds_ns.Drawer = __ds_scope.Drawer;
+
+__ds_ns.Fieldset = __ds_scope.Fieldset;
+
+__ds_ns.Textarea = __ds_scope.Textarea;
+
+__ds_ns.Stepper = __ds_scope.Stepper;
 
 })();

@@ -28,7 +28,8 @@
 const DS = window.DesignSystem_019de4;
 const { Button, Card, Mark, StatusBadge, Tag, Table, Tooltip, DivergingMeter, Heatmap, SequentialMeter, Sparkline,
         Alert, StatePanel, Skeleton, Toast, ToastStack, Modal, Checkbox, Radio, Input, Select, Toggle,
-        Tabs, Breadcrumb, Pagination, Menu, AppShell, StatTile, KeyValue, LogView, Freshness } = DS;
+        Tabs, Breadcrumb, Pagination, Menu, AppShell, StatTile, KeyValue, LogView, Freshness,
+        Stepper, Textarea, Fieldset, Drawer, Timeline, SkipLink, Kbd } = DS;
 const LOG = [
   { id: 1, ts: "02:13:50Z", severity: "info", msg: "Rebooted node-12. Telemetry nominal." },
   { id: 2, ts: "02:14:02Z", severity: "medium", msg: "Latency 41ms on node-13, above 40ms threshold. Sustained 12m." },
@@ -62,8 +63,26 @@ function Demo() {
   const drop = (id) => setToasts((t) => t.filter((x) => x.id !== id));
   const [log, setLog] = React.useState(LOG);
   React.useEffect(() => { const t = setInterval(() => setLog((l) => l.length < 40 ? [...l, { id: l.length + 1, ts: "02:15:" + String(l.length).padStart(2, "0") + "Z", severity: "info", msg: "Heartbeat node-" + ((l.length * 7) % 64) + " nominal." }] : l), 1500); return () => clearInterval(t); }, []);
+  const [drawer, setDrawer] = React.useState(false);
   return (
     <div className="page">
+      <SkipLink />
+      <Stepper current="targets" steps={[{ id: "scope", label: "Scope" }, { id: "targets", label: "Targets" }, { id: "review", label: "Review" }, { id: "apply", label: "Apply", state: "blocked" }]} />
+      <div className="grid2">
+        <Fieldset legend="Thresholds" hint="Applied to every node in the sector.">
+          <Input label="Warn (ms)" defaultValue="40" />
+          <Textarea label="Runbook note" rows={3} helper="What happened · why · what to do." />
+          <div className="row"><Kbd keys={["⌘", "K"]} /><Kbd keys="Esc" /><Button variant="ghost" size="sm" onClick={() => setDrawer(true)}>Open drawer</Button></div>
+        </Fieldset>
+        <Timeline events={[
+          { time: "02:14:31Z", severity: "critical", title: "Uplink down — sector 12.", body: "4 nodes unreachable for 4m. Reroute or restore the uplink." },
+          { time: "02:14:02Z", severity: "medium", title: "Latency 41ms on node-13, above 40ms threshold." },
+          { time: "02:13:50Z", title: "Rebooted node-12. Telemetry nominal." },
+        ]} />
+      </div>
+      <Drawer open={drawer} onClose={() => setDrawer(false)} title="node-13" footer={<Button variant="ghost" onClick={() => setDrawer(false)}>Close</Button>}>
+        <KeyValue items={[{ key: "Status", value: <StatusBadge step="critical" variant="plain" size={13} /> }, { key: "CPU", value: "97%", num: true }]} />
+      </Drawer>
       <div style={{ height: 300, border: "1px solid var(--border)" }}>
         <AppShell brand={<><Mark name="m-settings" size={18} />GRID·OPS</>}
                   summary={<><StatusBadge step="critical" label="2 DOWN" pulse /><StatusBadge step="medium" label="5 WARN" /><StatusBadge step="low" label="61 OK" /></>}

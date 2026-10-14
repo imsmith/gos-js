@@ -17,7 +17,7 @@ export function AppShell({ brand, summary, meta, actions, nav, navWidth, childre
         </div>
       </header>
       {nav && <nav className="ds-shell__nav">{nav}</nav>}
-      <main className="ds-shell__main">{children}</main>
+      <main id="main" className="ds-shell__main">{children}</main>
     </div>
   );
 }
