@@ -1,0 +1,16 @@
+/* console.css — page layout for the Operations Console. Layout only: every
+ * visual decision comes from the design-system components and tokens. */
+.ops-stack { display: flex; flex-direction: column; gap: var(--space-3); }
+.ops-stack--tight { gap: var(--space-2); }
+.ops-row { display: flex; align-items: center; gap: var(--space-2); flex-wrap: wrap; }
+.ops-row__end { margin-left: auto; display: flex; gap: var(--space-1); align-items: center; }
+.ops-grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: var(--space-2); }
+.ops-grid-main { display: grid; grid-template-columns: 1.4fr 1fr; gap: var(--space-3); align-items: start; }
+.ops-grid-detail { display: grid; grid-template-columns: 300px 1fr; gap: var(--space-3); align-items: start; }
+.ops-title { font-size: var(--text-h1); color: var(--accent); text-shadow: var(--glow-text-ambient); margin: 0; }
+.ops-h2 { font-size: var(--text-h2); margin: 0; }
+.ops-center { height: 100%; display: flex; align-items: center; justify-content: center; }
+.ops-login { width: 380px; max-width: 90vw; }
+.ops-nav-foot { margin-top: auto; padding: var(--space-2); font-size: var(--text-micro); color: var(--muted); line-height: 1.6; text-transform: uppercase; letter-spacing: var(--tracking-label); }
+.ops-back { transform: rotate(180deg); }
+@media (max-width: 1024px) { .ops-grid-4 { grid-template-columns: repeat(2, 1fr); } .ops-grid-main, .ops-grid-detail { grid-template-columns: 1fr; } }
