@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="tron">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>gos-js — every component</title>
+<link rel="stylesheet" href="../styles.css" />
+<script src="../assets/marks/sprite-inject.js"></script>
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" crossorigin="anonymous"></script>
+<script src="../_ds_bundle.js"></script>
+<style>
+  body { margin: 0; padding: var(--space-3); }
+  .page { display: flex; flex-direction: column; gap: var(--space-3); max-width: 1100px; }
+  .row { display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-2); }
+  .grid3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: var(--space-2); }
+  .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-3); align-items: start; }
+  .stack { display: flex; flex-direction: column; gap: var(--space-2); }
+  .cap { font-size: var(--text-micro); text-transform: uppercase; letter-spacing: var(--tracking-label); color: var(--muted); }
+  .switch { display: flex; gap: var(--space-2); align-items: center; }
+  .switch select { font: inherit; background: var(--surface); color: var(--text); border: 1px solid var(--border); padding: var(--space-half) var(--space-1); }
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script type="text/babel">
+const DS = window.DesignSystem_019de4;
+const { Button, Card, Mark, StatusBadge, Tag, Table, Tooltip, DivergingMeter, Heatmap, SequentialMeter, Sparkline,
+        Alert, StatePanel, Skeleton, Toast, ToastStack, Modal, Checkbox, Radio, Input, Select, Toggle,
+        Tabs, Breadcrumb, Pagination, Menu } = DS;
+
+const NODES = [
+  { id: "node-11", step: "low", cpu: 42, lat: 18 },
+  { id: "node-12", step: "medium", cpu: 78, lat: 41 },
+  { id: "node-13", step: "critical", cpu: 97, lat: 212 },
+];
+const CELLS = Array.from({ length: 48 }, (_, i) => ({ id: "n" + i, label: "node-" + i, value: ((i * 7) % 13) - 6 + ([5, 19].includes(i) ? 10 : 0) }));
+const SERIES = [12, 14, 13, 18, 22, 21, 27, 31, 30, 38, 44, 47];
+
+function Demo() {
+  const [theme, setTheme] = React.useState("tron");
+  const [mode, setMode] = React.useState("dark");
+  const [view, setView] = React.useState("alerts");
+  const [sel, setSel] = React.useState("node-13");
+  const [sort, setSort] = React.useState({ key: "cpu", dir: "descending" });
+  const [page, setPage] = React.useState(4);
+  const [item, setItem] = React.useState("alerts");
+  const [open, setOpen] = React.useState(false);
+  const [toasts, setToasts] = React.useState([
+    { id: 1, severity: "critical", title: "Uplink down — sector 12.", body: "Acknowledge to clear." },
+    { id: 2, severity: "low", title: "Rebooted node-12." },
+  ]);
+  React.useEffect(() => { document.documentElement.dataset.theme = theme; document.documentElement.dataset.mode = mode; }, [theme, mode]);
+  const drop = (id) => setToasts((t) => t.filter((x) => x.id !== id));
+  return (
+    <div className="page">
+      <div className="row">
+        <Breadcrumb items={[{ label: "Grid", href: "#" }, { label: "Sector 12", href: "#" }, { label: "node-13" }]} />
+        <span style={{ flex: 1 }} />
+        <label className="switch">theme <select value={theme} onChange={(e) => setTheme(e.target.value)}><option>tron</option><option>matrix</option><option>compaq</option></select></label>
+        <label className="switch">mode <select value={mode} onChange={(e) => setMode(e.target.value)}><option>dark</option><option>light</option></select></label>
+      </div>
+      <Tabs value={view} onChange={setView} tabs={[{ id: "grid", label: "Grid", icon: "m-menu" }, { id: "alerts", label: "Alerts", count: 3 }, { id: "audit", label: "Audit" }, { id: "policy", label: "Policy", disabled: true }]} />
+      <div className="row">
+        <Button variant="primary" icon="m-upload">Engage</Button>
+        <Button variant="ghost" icon="m-filter">Filter</Button>
+        <Button variant="text" iconEnd="m-chevron">Details</Button>
+        <Button variant="danger" icon="m-delete" onClick={() => setOpen(true)}>Delete cluster prod-east</Button>
+        <Button variant="ghost" loading>Saving</Button>
+        <Button variant="ghost" disabled>Locked</Button>
+      </div>
+      <div className="row">
+        <StatusBadge step="critical" pulse /><StatusBadge step="high" /><StatusBadge step="medium" /><StatusBadge step="low" /><StatusBadge step="unknown" />
+        <StatusBadge step="high" variant="solid" label="DEGRADED" /><StatusBadge step="low" variant="plain" label="GRID NOMINAL" />
+        <Tag>sector-12</Tag><Tag icon="m-lock" accent>tlp:amber</Tag><Tag onRemove={() => {}}>region=us-east</Tag>
+        <Sparkline data={SERIES} /><Sparkline data={SERIES} mode="threshold" warn={40} crit={60} unit="ms" />
+      </div>
+      <Table density="compact" sort={sort} onSort={(k) => setSort({ key: k, dir: sort.dir === "ascending" ? "descending" : "ascending" })}
+             selected={sel} onSelect={(r) => setSel(r.id)}
+             columns={[
+               { key: "id", label: "Node", sortable: true },
+               { key: "step", label: "Status", render: (r) => <StatusBadge step={r.step} variant="plain" size={13} /> },
+               { key: "cpu", label: "CPU %", num: true, sortable: true },
+               { key: "lat", label: <Tooltip text="p95 round-trip to the collector">Latency ms</Tooltip>, num: true },
+             ]} rows={NODES} />
+      <div className="grid2">
+        <DivergingMeter value={2.0} label="temp drift" unit="σ" />
+        <SequentialMeter value={82} warn={70} crit={90} label="cpu node-13" />
+        <DivergingMeter value={-4.5} label="pressure" />
+        <SequentialMeter value={96} warn={70} crit={90} label="disk" />
+      </div>
+      <div className="grid2">
+        <Heatmap cells={CELLS} columns={12} onSelect={() => {}} />
+        <div className="stack">
+          <Input label="Port" icon="m-settings" defaultValue="99999" error="Port out of range. Use 1–65535." />
+          <Input label="Search" icon="m-search" placeholder="node id" helper="Prefix match." />
+          <Select label="Sector" options={["11", "12", { value: "13", label: "Thirteen" }]} defaultValue="12" />
+          <div className="row"><Checkbox label="Acknowledge" defaultChecked /><Radio name="mode" value="live" label="Live" defaultChecked /><Radio name="mode" value="replay" label="Replay" /><Toggle label="Live tail" showState defaultChecked /></div>
+        </div>
+      </div>
+      <div className="grid3">
+        <StatePanel mode="empty" title="No alerts in sector 12" action={<Button variant="ghost" size="sm" icon="m-add">Create rule</Button>}>Nothing crossed a threshold in 24h.</StatePanel>
+        <StatePanel mode="loading" title="Loading telemetry"><Skeleton lines={3} /></StatePanel>
+        <StatePanel mode="error" title="Telemetry unavailable" action={<Button variant="ghost" size="sm" icon="m-refresh">Retry</Button>}>Collector db-03 timed out after 30s.</StatePanel>
+      </div>
+      <div className="row" style={{ alignItems: "flex-start" }}>
+        <Menu label="Sections" selected={item} onSelect={(it) => setItem(it.id)} items={[{ heading: "Grid" }, { id: "grid", label: "Dashboard", icon: "m-menu" }, { id: "alerts", label: "Alerts", icon: "m-bell", hint: 3 }, { separator: true }, { id: "settings", label: "Settings", icon: "m-settings", submenu: true }, { id: "policy", label: "Policy", icon: "m-lock", disabled: true }]} />
+        <Pagination page={page} total={9} onChange={setPage} />
+        <Card title="node-13 · sector 12" density="compact" style={{ flex: 1 }} actions={<Button variant="text" size="sm" iconEnd="m-more" aria-label="More" />}>
+          <Alert severity="high" title="Replica lag 42 s." onDismiss={() => {}}>Primary under write burst. Check db-03 before failover.</Alert>
+        </Card>
+      </div>
+      <Modal open={open} onClose={() => setOpen(false)} title="Delete cluster prod-east" destructive
+             footer={<><Button variant="ghost" onClick={() => setOpen(false)}>Cancel</Button><Button variant="danger" icon="m-delete" onClick={() => setOpen(false)}>Delete cluster</Button></>}>
+        Deletes 14 nodes and their volumes. This cannot be undone.
+      </Modal>
+      <ToastStack>{toasts.map((t) => <Toast key={t.id} severity={t.severity} title={t.title} onDismiss={() => drop(t.id)} duration={0}>{t.body}</Toast>)}</ToastStack>
+    </div>
+  );
+}
+ReactDOM.createRoot(document.getElementById("root")).render(<Demo />);
+</script>
+</body>
+</html>
