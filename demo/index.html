@@ -28,7 +28,14 @@
 const DS = window.DesignSystem_019de4;
 const { Button, Card, Mark, StatusBadge, Tag, Table, Tooltip, DivergingMeter, Heatmap, SequentialMeter, Sparkline,
         Alert, StatePanel, Skeleton, Toast, ToastStack, Modal, Checkbox, Radio, Input, Select, Toggle,
-        Tabs, Breadcrumb, Pagination, Menu } = DS;
+        Tabs, Breadcrumb, Pagination, Menu, AppShell, StatTile, KeyValue, LogView, Freshness } = DS;
+const LOG = [
+  { id: 1, ts: "02:13:50Z", severity: "info", msg: "Rebooted node-12. Telemetry nominal." },
+  { id: 2, ts: "02:14:02Z", severity: "medium", msg: "Latency 41ms on node-13, above 40ms threshold. Sustained 12m." },
+  { id: 3, ts: "02:14:20Z", severity: "high", msg: "Replica lag 42 s. Primary under write burst. Check db-03 before failover." },
+  { id: 4, ts: "02:14:31Z", severity: "critical", msg: "Uplink down — sector 12. 4 nodes unreachable for 4m. Reroute or restore the uplink." },
+  { id: 5, ts: "02:14:40Z", severity: "low", msg: "Reroute applied. 3 of 4 nodes reachable." },
+];
 
 const NODES = [
   { id: "node-11", step: "low", cpu: 42, lat: 18 },
@@ -53,8 +60,27 @@ function Demo() {
   ]);
   React.useEffect(() => { document.documentElement.dataset.theme = theme; document.documentElement.dataset.mode = mode; }, [theme, mode]);
   const drop = (id) => setToasts((t) => t.filter((x) => x.id !== id));
+  const [log, setLog] = React.useState(LOG);
+  React.useEffect(() => { const t = setInterval(() => setLog((l) => l.length < 40 ? [...l, { id: l.length + 1, ts: "02:15:" + String(l.length).padStart(2, "0") + "Z", severity: "info", msg: "Heartbeat node-" + ((l.length * 7) % 64) + " nominal." }] : l), 1500); return () => clearInterval(t); }, []);
   return (
     <div className="page">
+      <div style={{ height: 300, border: "1px solid var(--border)" }}>
+        <AppShell brand={<><Mark name="m-settings" size={18} />GRID·OPS</>}
+                  summary={<><StatusBadge step="critical" label="2 DOWN" pulse /><StatusBadge step="medium" label="5 WARN" /><StatusBadge step="low" label="61 OK" /></>}
+                  meta={<Freshness state="live" at="02:14:31Z" />}
+                  actions={<Button variant="text" size="sm" icon="m-bell" aria-label="Notifications">3</Button>}
+                  nav={<Menu variant="sidebar" label="Sections" selected={item} onSelect={(it) => setItem(it.id)} items={[{ id: "grid", label: "Dashboard", icon: "m-menu" }, { id: "alerts", label: "Alerts", icon: "m-bell", hint: 3 }, { id: "settings", label: "Settings", icon: "m-settings" }]} />}>
+          <div className="grid3">
+            <StatTile label="CPU node-13" value={97} unit="%" delta={4} deltaUnit="pt" step="critical"><Sparkline data={SERIES} /><StatusBadge step="critical" variant="plain" size={13} /></StatTile>
+            <StatTile label="Replica lag" value={42} unit="s" delta={-3} deltaUnit="s" step="medium"><Sparkline data={[...SERIES].reverse()} /></StatTile>
+            <StatTile label="Nodes online" value={61} unit="/ 64" delta={0}><Freshness state="stale" at="01:58:04Z" /></StatTile>
+          </div>
+        </AppShell>
+      </div>
+      <div className="grid2">
+        <KeyValue columns={2} items={[{ key: "Node", value: "node-13" }, { key: "Status", value: <StatusBadge step="critical" variant="plain" size={13} /> }, { key: "CPU", value: "97%", num: true }, { key: "Region", value: <Tag>us-east</Tag> }, { key: "Uptime", value: "14d 02:14", num: true }, { key: "Kernel", value: "6.12.107" }]} />
+        <LogView lines={log} height="12rem" />
+      </div>
       <div className="row">
         <Breadcrumb items={[{ label: "Grid", href: "#" }, { label: "Sector 12", href: "#" }, { label: "node-13" }]} />
         <span style={{ flex: 1 }} />

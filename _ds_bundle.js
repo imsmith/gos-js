@@ -1,4 +1,4 @@
-/* @ds-bundle: {"format":3,"namespace":"DesignSystem_019de4","components":[{"name":"Button","sourcePath":"components/core/Button.jsx"},{"name":"Card","sourcePath":"components/core/Card.jsx"},{"name":"Mark","sourcePath":"components/core/Mark.jsx"},{"name":"StatusBadge","sourcePath":"components/core/StatusBadge.jsx"},{"name":"Tag","sourcePath":"components/core/Tag.jsx"},{"name":"DivergingMeter","sourcePath":"components/data/DivergingMeter.jsx"},{"name":"Heatmap","sourcePath":"components/data/Heatmap.jsx"},{"name":"SequentialMeter","sourcePath":"components/data/SequentialMeter.jsx"},{"name":"Sparkline","sourcePath":"components/data/Sparkline.jsx"},{"name":"Alert","sourcePath":"components/feedback/Alert.jsx"},{"name":"Checkbox","sourcePath":"components/forms/Checkbox.jsx"},{"name":"Input","sourcePath":"components/forms/Input.jsx"},{"name":"Select","sourcePath":"components/forms/Select.jsx"},{"name":"Toggle","sourcePath":"components/forms/Toggle.jsx"},{"name":"Tabs","sourcePath":"components/navigation/Tabs.jsx"},{"name":"Table","sourcePath":"components/core/Table.jsx","exports":["Table"]},{"name":"Tooltip","sourcePath":"components/core/Tooltip.jsx","exports":["Tooltip"]},{"name":"Modal","sourcePath":"components/feedback/Modal.jsx","exports":["Modal"]},{"name":"StatePanel","sourcePath":"components/feedback/StatePanel.jsx","exports":["StatePanel","Skeleton"]},{"name":"Toast","sourcePath":"components/feedback/Toast.jsx","exports":["Toast","ToastStack"]},{"name":"Radio","sourcePath":"components/forms/Radio.jsx","exports":["Radio"]},{"name":"Breadcrumb","sourcePath":"components/navigation/Breadcrumb.jsx","exports":["Breadcrumb"]},{"name":"Menu","sourcePath":"components/navigation/Menu.jsx","exports":["Menu"]},{"name":"Pagination","sourcePath":"components/navigation/Pagination.jsx","exports":["Pagination"]}],"sourceHashes":{"assets/marks/sprite-inject.js":"5a5d74914289","components/core/Button.jsx":"d2a980d93dc0","components/core/Card.jsx":"832042dd214f","components/core/Mark.jsx":"ae112ec59efc","components/core/StatusBadge.jsx":"facd22220d4f","components/core/Tag.jsx":"12d61187c337","components/data/DivergingMeter.jsx":"44ee6f131060","components/data/Heatmap.jsx":"ac4ad10964ea","components/data/SequentialMeter.jsx":"a81dc6f85249","components/data/Sparkline.jsx":"69181e5ed918","components/feedback/Alert.jsx":"1b2946adb71c","components/forms/Checkbox.jsx":"03b863d69b1a","components/forms/Input.jsx":"1d17bd92be58","components/forms/Select.jsx":"dd37240a0cea","components/forms/Toggle.jsx":"8bd900ae4450","components/navigation/Tabs.jsx":"b03e369b6916","ui_kits/operations-console/AlertsView.jsx":"82da2d585bac","ui_kits/operations-console/App.jsx":"7d56c2e6f3ff","ui_kits/operations-console/GridDashboard.jsx":"a89c30b281fc","ui_kits/operations-console/LoginScreen.jsx":"c2729dc4a06f","ui_kits/operations-console/NodeDetail.jsx":"4f3574647a49","ui_kits/operations-console/Shell.jsx":"c6fdc9491548","ui_kits/operations-console/data.js":"fb919dbc6d92","components/core/Table.jsx":"f6375b822393","components/core/Tooltip.jsx":"4c41350343e5","components/feedback/Modal.jsx":"54651315685b","components/feedback/StatePanel.jsx":"78bb09c65393","components/feedback/Toast.jsx":"3b676e3d62e6","components/forms/Radio.jsx":"a2def396419c","components/navigation/Breadcrumb.jsx":"4a481889a1df","components/navigation/Menu.jsx":"f9059627e548","components/navigation/Pagination.jsx":"bad8d39e4d6c"},"inlinedExternals":[],"unexposedExports":[]} */
+/* @ds-bundle: {"format":3,"namespace":"DesignSystem_019de4","components":[{"name":"Button","sourcePath":"components/core/Button.jsx"},{"name":"Card","sourcePath":"components/core/Card.jsx"},{"name":"Mark","sourcePath":"components/core/Mark.jsx"},{"name":"StatusBadge","sourcePath":"components/core/StatusBadge.jsx"},{"name":"Tag","sourcePath":"components/core/Tag.jsx"},{"name":"DivergingMeter","sourcePath":"components/data/DivergingMeter.jsx"},{"name":"Heatmap","sourcePath":"components/data/Heatmap.jsx"},{"name":"SequentialMeter","sourcePath":"components/data/SequentialMeter.jsx"},{"name":"Sparkline","sourcePath":"components/data/Sparkline.jsx"},{"name":"Alert","sourcePath":"components/feedback/Alert.jsx"},{"name":"Checkbox","sourcePath":"components/forms/Checkbox.jsx"},{"name":"Input","sourcePath":"components/forms/Input.jsx"},{"name":"Select","sourcePath":"components/forms/Select.jsx"},{"name":"Toggle","sourcePath":"components/forms/Toggle.jsx"},{"name":"Tabs","sourcePath":"components/navigation/Tabs.jsx"},{"name":"Table","sourcePath":"components/core/Table.jsx","exports":["Table"]},{"name":"Tooltip","sourcePath":"components/core/Tooltip.jsx","exports":["Tooltip"]},{"name":"Modal","sourcePath":"components/feedback/Modal.jsx","exports":["Modal"]},{"name":"StatePanel","sourcePath":"components/feedback/StatePanel.jsx","exports":["StatePanel","Skeleton"]},{"name":"Toast","sourcePath":"components/feedback/Toast.jsx","exports":["Toast","ToastStack"]},{"name":"Radio","sourcePath":"components/forms/Radio.jsx","exports":["Radio"]},{"name":"Breadcrumb","sourcePath":"components/navigation/Breadcrumb.jsx","exports":["Breadcrumb"]},{"name":"Menu","sourcePath":"components/navigation/Menu.jsx","exports":["Menu"]},{"name":"Pagination","sourcePath":"components/navigation/Pagination.jsx","exports":["Pagination"]},{"name":"Freshness","sourcePath":"components/data/Freshness.jsx","exports":["Freshness"]},{"name":"KeyValue","sourcePath":"components/data/KeyValue.jsx","exports":["KeyValue"]},{"name":"LogView","sourcePath":"components/data/LogView.jsx","exports":["LogView"]},{"name":"StatTile","sourcePath":"components/data/StatTile.jsx","exports":["StatTile"]},{"name":"AppShell","sourcePath":"components/layout/AppShell.jsx","exports":["AppShell"]}],"sourceHashes":{"assets/marks/sprite-inject.js":"5a5d74914289","components/core/Button.jsx":"d2a980d93dc0","components/core/Card.jsx":"832042dd214f","components/core/Mark.jsx":"ae112ec59efc","components/core/StatusBadge.jsx":"facd22220d4f","components/core/Tag.jsx":"12d61187c337","components/data/DivergingMeter.jsx":"44ee6f131060","components/data/Heatmap.jsx":"ac4ad10964ea","components/data/SequentialMeter.jsx":"a81dc6f85249","components/data/Sparkline.jsx":"69181e5ed918","components/feedback/Alert.jsx":"1b2946adb71c","components/forms/Checkbox.jsx":"03b863d69b1a","components/forms/Input.jsx":"1d17bd92be58","components/forms/Select.jsx":"dd37240a0cea","components/forms/Toggle.jsx":"8bd900ae4450","components/navigation/Tabs.jsx":"b03e369b6916","ui_kits/operations-console/AlertsView.jsx":"82da2d585bac","ui_kits/operations-console/App.jsx":"7d56c2e6f3ff","ui_kits/operations-console/GridDashboard.jsx":"a89c30b281fc","ui_kits/operations-console/LoginScreen.jsx":"c2729dc4a06f","ui_kits/operations-console/NodeDetail.jsx":"4f3574647a49","ui_kits/operations-console/Shell.jsx":"c6fdc9491548","ui_kits/operations-console/data.js":"fb919dbc6d92","components/core/Table.jsx":"f6375b822393","components/core/Tooltip.jsx":"4c41350343e5","components/feedback/Modal.jsx":"54651315685b","components/feedback/StatePanel.jsx":"78bb09c65393","components/feedback/Toast.jsx":"3b676e3d62e6","components/forms/Radio.jsx":"a2def396419c","components/navigation/Breadcrumb.jsx":"4a481889a1df","components/navigation/Menu.jsx":"f9059627e548","components/navigation/Pagination.jsx":"bad8d39e4d6c","components/data/Freshness.jsx":"bc60a9ee6152","components/data/KeyValue.jsx":"3f99212d4366","components/data/LogView.jsx":"b3b025949335","components/data/StatTile.jsx":"03100568fbb3","components/layout/AppShell.jsx":"6bb80e2522c2"},"inlinedExternals":[],"unexposedExports":[]} */
 
 (() => {
 
@@ -900,6 +900,83 @@ function Pagination({ page = 1, total = 1, onChange, className = "", ...rest }) 
 }
 Object.assign(__ds_scope, { Pagination });
 })(); } catch (e) { __ds_ns.__errors.push({ path: "components/navigation/Pagination.jsx", error: String((e && e.message) || e) }); }
+// components/data/Freshness.jsx
+try { (() => {
+const WORD = { live: "LIVE", paused: "PAUSED", stale: "STALE", offline: "OFFLINE" };
+function Freshness({ state = "live", at, label, className = "", ...rest }) {
+  return /* @__PURE__ */ React.createElement("span", { className: `ds-fresh ds-fresh--${state} ${className}`.trim(), role: "status", ...rest }, /* @__PURE__ */ React.createElement("span", { className: "ds-fresh__dot", "aria-hidden": "true" }), /* @__PURE__ */ React.createElement("span", null, label || WORD[state] || state), at && /* @__PURE__ */ React.createElement("span", { className: "ds-fresh__at" }, "\xB7 ", at));
+}
+Object.assign(__ds_scope, { Freshness });
+})(); } catch (e) { __ds_ns.__errors.push({ path: "components/data/Freshness.jsx", error: String((e && e.message) || e) }); }
+// components/data/KeyValue.jsx
+try { (() => {
+function KeyValue({ items = [], density = "compact", columns = 1, className = "", ...rest }) {
+  const cls = ["ds-kv", density !== "compact" ? `ds-kv--${density}` : "", columns === 2 ? "ds-kv--2col" : "", className].filter(Boolean).join(" ");
+  return /* @__PURE__ */ React.createElement("dl", { className: cls, ...rest }, items.map((it, i) => /* @__PURE__ */ React.createElement(React.Fragment, { key: i }, /* @__PURE__ */ React.createElement("dt", { className: "ds-kv__k" }, it.key), /* @__PURE__ */ React.createElement("dd", { className: `ds-kv__v${it.num ? " ds-kv__v--num" : ""}` }, it.value))));
+}
+Object.assign(__ds_scope, { KeyValue });
+})(); } catch (e) { __ds_ns.__errors.push({ path: "components/data/KeyValue.jsx", error: String((e && e.message) || e) }); }
+// components/data/LogView.jsx
+try { (() => {
+const { Mark } = __ds_scope;
+const SEV = {
+  critical: { c: "var(--status-critical)", on: "var(--on-status-critical)", glyph: "m-critical", word: "DOWN" },
+  high: { c: "var(--status-high)", on: "var(--on-status-high)", glyph: "m-high", word: "ALERT" },
+  medium: { c: "var(--status-medium)", on: "var(--on-status-medium)", glyph: "m-medium", word: "WARN" },
+  low: { c: "var(--status-low)", on: "var(--on-status-low)", glyph: "m-low", word: "OK" },
+  unknown: { c: "var(--status-unknown)", on: "var(--on-status-unknown)", glyph: "m-unknown", word: "UNK" },
+  info: { c: "var(--muted)", on: "var(--bg)", glyph: "m-info", word: "INFO" }
+};
+function LogView({ lines = [], follow = true, height, className = "", ...rest }) {
+  const ref = React.useRef(null);
+  const [paused, setPaused] = React.useState(false);
+  const [unseen, setUnseen] = React.useState(0);
+  const atBottom = (el) => el.scrollHeight - el.scrollTop - el.clientHeight < 4;
+  React.useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+    if (follow && !paused) {
+      el.scrollTop = el.scrollHeight;
+      setUnseen(0);
+    } else if (paused) setUnseen((n) => n + 1);
+  }, [lines.length]);
+  const onScroll = () => {
+    const el = ref.current;
+    if (atBottom(el)) {
+      setPaused(false);
+      setUnseen(0);
+    } else if (follow) setPaused(true);
+  };
+  const resume = () => {
+    const el = ref.current;
+    el.scrollTop = el.scrollHeight;
+    setPaused(false);
+    setUnseen(0);
+  };
+  return /* @__PURE__ */ React.createElement("div", { ref, className: `ds-log ${className}`.trim(), style: height ? { "--_h": height } : void 0, role: "log", "aria-live": "polite", onScroll, ...rest }, lines.map((l, i) => {
+    const s = SEV[l.severity] || SEV.info;
+    return /* @__PURE__ */ React.createElement("div", { key: l.id || i, className: `ds-log__line${l.severity === "critical" ? " ds-log__line--critical" : ""}` }, /* @__PURE__ */ React.createElement("span", { className: "ds-log__ts" }, l.ts), /* @__PURE__ */ React.createElement("span", { className: "ds-log__sev", style: { "--_c": s.c, "--_on": s.on } }, /* @__PURE__ */ React.createElement(Mark, { name: s.glyph, size: 12 }), s.word), /* @__PURE__ */ React.createElement("span", { className: "ds-log__msg" }, l.msg));
+  }), paused && /* @__PURE__ */ React.createElement("button", { type: "button", className: "ds-log__paused", onClick: resume }, "Paused", unseen ? ` \xB7 ${unseen} new` : "", " \u2193"));
+}
+Object.assign(__ds_scope, { LogView });
+})(); } catch (e) { __ds_ns.__errors.push({ path: "components/data/LogView.jsx", error: String((e && e.message) || e) }); }
+// components/data/StatTile.jsx
+try { (() => {
+const { Mark } = __ds_scope;
+function StatTile({ label, value, unit, delta, deltaUnit = "", step, children, className = "", ...rest }) {
+  const d = delta == null ? null : Number(delta);
+  const sign = d == null ? null : d > 0 ? "warm" : d < 0 ? "cool" : "neutral";
+  return /* @__PURE__ */ React.createElement("div", { className: `ds-stat ${className}`.trim(), "data-step": step, style: step ? { "--_c": `var(--status-${step})` } : void 0, ...rest }, /* @__PURE__ */ React.createElement("div", { className: "ds-stat__label" }, label), /* @__PURE__ */ React.createElement("div", { className: "ds-stat__value" }, /* @__PURE__ */ React.createElement("span", null, value), unit && /* @__PURE__ */ React.createElement("span", { className: "ds-stat__unit" }, unit), d != null && /* @__PURE__ */ React.createElement("span", { className: "ds-stat__delta" }, /* @__PURE__ */ React.createElement(Mark, { name: `m-${sign}`, size: 12, label: sign === "warm" ? "up" : sign === "cool" ? "down" : "unchanged" }), sign === "cool" ? "\u2212" : sign === "warm" ? "+" : "\xB1", Math.abs(d), deltaUnit)), children && /* @__PURE__ */ React.createElement("div", { className: "ds-stat__foot" }, children));
+}
+Object.assign(__ds_scope, { StatTile });
+})(); } catch (e) { __ds_ns.__errors.push({ path: "components/data/StatTile.jsx", error: String((e && e.message) || e) }); }
+// components/layout/AppShell.jsx
+try { (() => {
+function AppShell({ brand, summary, meta, actions, nav, navWidth, children, className = "", ...rest }) {
+  return /* @__PURE__ */ React.createElement("div", { className: ["ds-shell", nav ? "" : "ds-shell--no-nav", className].filter(Boolean).join(" "), style: navWidth ? { "--_nav": navWidth } : void 0, ...rest }, /* @__PURE__ */ React.createElement("header", { className: "ds-shell__head" }, brand && /* @__PURE__ */ React.createElement("div", { className: "ds-shell__brand" }, brand), summary && /* @__PURE__ */ React.createElement("div", { className: "ds-shell__summary" }, summary), /* @__PURE__ */ React.createElement("div", { className: "ds-shell__meta" }, meta, actions && /* @__PURE__ */ React.createElement("div", { className: "ds-shell__actions" }, actions))), nav && /* @__PURE__ */ React.createElement("nav", { className: "ds-shell__nav" }, nav), /* @__PURE__ */ React.createElement("main", { className: "ds-shell__main" }, children));
+}
+Object.assign(__ds_scope, { AppShell });
+})(); } catch (e) { __ds_ns.__errors.push({ path: "components/layout/AppShell.jsx", error: String((e && e.message) || e) }); }
 __ds_ns.Button = __ds_scope.Button;
 
 __ds_ns.Card = __ds_scope.Card;
@@ -951,5 +1028,15 @@ __ds_ns.Breadcrumb = __ds_scope.Breadcrumb;
 __ds_ns.Menu = __ds_scope.Menu;
 
 __ds_ns.Pagination = __ds_scope.Pagination;
+
+__ds_ns.Freshness = __ds_scope.Freshness;
+
+__ds_ns.KeyValue = __ds_scope.KeyValue;
+
+__ds_ns.LogView = __ds_scope.LogView;
+
+__ds_ns.StatTile = __ds_scope.StatTile;
+
+__ds_ns.AppShell = __ds_scope.AppShell;
 
 })();
